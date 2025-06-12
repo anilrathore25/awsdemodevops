@@ -4,6 +4,7 @@ phases:
   install:
     commands:
       - echo Installing NGINX
+      - sudo yum repolist  # Check available repositories
       - sudo yum update -y
       - sudo yum install nginx -y
   pre_build:
